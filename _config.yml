@@ -1,1 +1,45 @@
 theme: minima
+
+lang: en-US
+title: XRDeveloper
+email: samsonfr@nm-aist.ac.tz
+description: ""
+baseurl: ""  # the subpath of your site, e.g. /blog
+url: "https://samsonfrank.github.io"  # the base hostname & protocol for your site, e.g. http://example.com
+author:
+  name: Frank
+  twitter: graphicrafter
+  picture: /assets/images/profile.jpg
+twitter_username: graphicrafter
+github_username: samsontz
+logo: /assets/icons/bakishule.png
+
+
+
+disqus:
+    shortname: bakishule
+# Build settings
+markdown: kramdown
+
+#theme: jekyll-theme-basically-basic
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+feed:
+  path: atom.xml
+
+# Pagination - https://jekyllrb.com/docs/pagination/
+paginate: 5
+paginate_path: /page:num/
+
+# Front Matter Defaults
+defaults:
+  # _posts
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
+      read_time: true
